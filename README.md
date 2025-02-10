@@ -23,6 +23,7 @@ getRandomQuestion: Returns a random question from the list.
 const quizManager = new QuizManager();
 
 // Add questions (id, difficultyId, description, answers)
+
 Questions.addQuestion(1, 1, "What is the capital of France?", [
     { text: "Paris", correct: true },
     { text: "London", correct: false },
