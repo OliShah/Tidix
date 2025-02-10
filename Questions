@@ -1,0 +1,50 @@
+// questions.js
+const questions = [
+    {
+        id: 1,
+        difficultyId: 1,
+        description: "What is the capital of France?",
+        answers: [
+            { text: "Paris", correct: true },
+            { text: "London", correct: false },
+            { text: "Berlin", correct: false },
+            { text: "Madrid", correct: false }
+        ]
+    },
+    {
+        id: 2,
+        difficultyId: 2,
+        description: "What is the square root of 64?",
+        answers: [
+            { text: "4", correct: false },
+            { text: "8", correct: true },
+            { text: "16", correct: false },
+            { text: "32", correct: false }
+        ]
+    },
+    {
+        id: 3,
+        difficultyId: 3,
+        description: "What is the chemical symbol for gold?",
+        answers: [
+            { text: "Au", correct: true },
+            { text: "Ag", correct: false },
+            { text: "Fe", correct: false },
+            { text: "Cu", correct: false }
+        ]
+    }
+];
+
+// Function to add a new question
+function addQuestion(id, difficultyId, description, answers) {
+    const newQuestion = {
+        id,
+        difficultyId,
+        description,
+        answers
+    };
+    questions.push(newQuestion);
+}
+
+// Export the questions array and the addQuestion function
+export { questions, addQuestion };

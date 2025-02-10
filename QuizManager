@@ -1,0 +1,42 @@
+// main.js
+import questions from './questions.js';
+
+class QuizManager {
+    constructor() {
+        this.questions = questions; // Load questions directly
+        this.difficultyMapping = {
+            1: { text: "Easy", points: 5 },
+            2: { text: "Moderate", points: 10 },
+            3: { text: "Advanced", points: 15 },
+            4: { text: "Difficult", points: 20 }
+        };
+    }
+
+    // Get a random question
+    getRandomQuestion() {
+        const randomIndex = Math.floor(Math.random() * this.questions.length);
+        return this.questions[randomIndex];
+    }
+
+    // Get all questions with difficulty text and points
+    getAllQuestions() {
+        return this.questions.map(question => {
+            const difficultyInfo = this.getDifficultyInfo(question.difficultyId);
+            return {
+                ...question,
+                difficultyText: difficultyInfo.text,
+                points: difficultyInfo.points
+            };
+        });
+    }
+
+    // Get difficulty information
+    getDifficultyInfo(difficultyId) {
+        return this.difficultyMapping[difficultyId];
+    }
+}
+
+// Usage
+const quizManager = new QuizManager();
+const randomQuestion = quizManager.getRandomQuestion();
+console.log('Random question:', randomQuestion.description);

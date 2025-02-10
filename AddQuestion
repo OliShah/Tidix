@@ -1,0 +1,9 @@
+// Function to add question is in the file Questions.js
+
+// Add a new question dynamically (id, difficultyId, description, [answers])
+addQuestion(3, 3, "What is the chemical symbol for gold?", [
+    { text: "Au", correct: true },
+    { text: "Ag", correct: false },
+    { text: "Fe", correct: false },
+    { text: "Cu", correct: false }
+]);
