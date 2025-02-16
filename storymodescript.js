@@ -94,6 +94,7 @@ function loadQuestion() {
     });
 
     document.getElementById("score").innerText = `Score: ${score}`;
+    ;
 }
 
 function selectAnswer(choiceIndex) {
@@ -105,6 +106,7 @@ function selectAnswer(choiceIndex) {
         sndwrong.play();
     }
     currentQuestionIndex++;
+    
     loadQuestion();
 }
 document.addEventListener("DOMContentLoaded", () => {
