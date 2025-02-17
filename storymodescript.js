@@ -91,7 +91,7 @@ function endGame(reason) {
 }
 
 function goToSurvey() {
-    window.location.href = "https://your-survey-link.com";
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeWECsUimmH9gjThFiu3didm_GhxSB8ziNvmzWy5Ja-BN_-NA/viewform";
 }
 
 function goToMainMenu() {
