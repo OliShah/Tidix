@@ -28,52 +28,18 @@ const quizData = [
         question: "Which car brand uses a prancing horse as its logo?",
         choices: ["Lamborghini", "Porsche", "Maserati", "Ferrari"],
         correct: 3
-    },
-    {
-        difficultyId: 2,
-        question: "Which car company produces the Corolla?",
-        choices: ["Toyota", "Honda", "Ford", "Nissan"],
-        correct: 0
-    },
-    {
-        difficultyId: 4,
-        question: "What is the best-selling car of all time?",
-        choices: ["Volkswagen Beetle", "Ford Model T", "Toyota Corolla", "Dodge Charger"],
-        correct: 2
-    },
-    {
-        difficultyId: 1,
-        question: "Which car brand has the 'Four Rings' logo?",
-        choices: ["BMW", "Mercedes-Benz", "Audi", "Volkswagen"],
-        correct: 2
-    },
-    {
-        difficultyId: 2,
-        question: "What type of car is best for off-road driving?",
-        choices: ["Convertible", "Hatchback", "Sedan", "SUV"],
-        correct: 3
-    },
-    {
-        difficultyId: 3,
-        question: "Which car manufacturer makes the Civic?",
-        choices: ["Hyundai", "Honda", "Nissan", "Subaru"],
-        correct: 1
     }
 ];
+
 quizData.sort((a, b) => {
     if (a.difficultyId !== b.difficultyId) {
       return a.difficultyId - b.difficultyId;
     } else {
-      return Math.random() - 0.5; // random order if same difficulty
+      return Math.random() - 0.5;
     }
-  });
+});
 
-score_mapping = {
-    1: 5,
-    2: 10,
-    3: 15,
-    4: 20
-}
+score_mapping = { 1: 5, 2: 10, 3: 15, 4: 20 };
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -82,26 +48,47 @@ var sndcorrect = new Audio("choicecorrect.wav");
 
 var timeLeft = 10;
 var timer = setInterval(function(){
-    timeLeft --;
+    timeLeft--;
     document.getElementById("timer").textContent = timeLeft;
-    document.getElementById("diff").textContent = quizData[currentQuestionIndex].difficultyId
-    if(timeLeft <= 0 && score < 5){
-        clearInterval(timer);
-        document.getElementById("quiz-container").innerHTML = `<h2>Time's Up!</h2><p>Your final score is: ${score}</p>`;
-    }
-    if(timeLeft <= 0 && score >= 5){
-        clearInterval(timer);
-        document.getElementById("quiz-container").innerHTML = `<h2>Congratulations! You've won a *prize*!</h2><p>Your final score is: ${score}</p>`;
+    document.getElementById("diff").textContent = quizData[currentQuestionIndex].difficultyId;
+    if (timeLeft <= 0) {
+        endGame("timeout");
     }
 }, 1000);
 
-function loadQuestion() {
-    if (currentQuestionIndex >= quizData.length && score >= 5) {
-        document.getElementById("quiz-container").innerHTML = `<h2>Congratulations! You've won a *prize*!</h2><p>Your final score is: ${score}</p>`;
-        return;
+function endGame(reason) {
+    clearInterval(timer);
+    let quizContainer = document.getElementById("quiz-container");
+
+    let message = "";
+    if (reason === "timeout") {
+        message = `<h2>Time's Up!</h2>`;
+    } else if (score >= 5) {
+        message = `<h2>Congratulations! You've won a *prize*!</h2>`;
+    } else {
+        message = `<h2>Game Over!</h2>`;
     }
-    if (currentQuestionIndex >= quizData.length && score < 5) {
-        document.getElementById("quiz-container").innerHTML = `<h2>Game Over!</h2><p>Your final score is: ${score}</p>`;
+
+    quizContainer.innerHTML = `
+        <p>We would greatly appreciate it if you could take a moment to complete our survey and provide feedback on our game!</p>
+        ${message}
+        <p>Your final score is: ${score}</p>
+        <button onclick="goToSurvey()">Take Survey</button>
+        <button onclick="goToMainMenu()">Return to Main Menu</button>
+    `;
+}
+
+function goToSurvey() {
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeWECsUimmH9gjThFiu3didm_GhxSB8ziNvmzWy5Ja-BN_-NA/viewform";
+}
+
+function goToMainMenu() {
+    window.location.href = "index.html";
+}
+
+function loadQuestion() {
+    if (currentQuestionIndex >= quizData.length) {
+        endGame("finished");
         return;
     }
 
@@ -114,10 +101,8 @@ function loadQuestion() {
             timeLeft = 11;
             btn.innerText = q.choices[index];
             btn.style.display = "block";
-            
         }
     });
-
     document.getElementById("score").innerText = `Score: ${score}`;
 }
 
@@ -125,13 +110,13 @@ function selectAnswer(choiceIndex) {
     if (choiceIndex === quizData[currentQuestionIndex].correct) {
         score += score_mapping[quizData[currentQuestionIndex].difficultyId];
         sndcorrect.play();
-    }
-    else {
+    } else {
         sndwrong.play();
     }
     currentQuestionIndex++;
     loadQuestion();
 }
+
 document.addEventListener("DOMContentLoaded", () => {
     loadQuestion();
 });
