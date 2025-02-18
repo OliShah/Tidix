@@ -1,0 +1,703 @@
+[
+    {
+        "id": 1,
+        "difficultyId": 1,
+        "question": "Which company produces the Mustang?",
+        "choices": ["Chevrolet", "Ford", "Toyota", "BMW"],
+        "correct": 1
+    },
+    {
+        "id": 2,
+        "difficultyId": 2,
+        "question": "What country is Ferrari from?",
+        "choices": ["France", "Germany", "Italy", "Japan"],
+        "correct": 2
+    },
+    {
+        "id": 3,
+        "difficultyId": 3,
+        "question": "Which fuel is commonly used in most cars?",
+        "choices": ["Diesel", "Electricity", "Gasoline", "Water"],
+        "correct": 2
+    },
+    {
+        "id": 4,
+        "difficultyId": 2,
+        "question": "What does 'SUV' stand for?",
+        "choices": ["Speed Utility Vehicle", "Sport Utility Vehicle", "Super Urban Van", "Small Utility Vehicle"],
+        "correct": 1
+    },
+    {
+        "id": 5,
+        "difficultyId": 1,
+        "question": "Which car brand uses a prancing horse as its logo?",
+        "choices": ["Lamborghini", "Porsche", "Maserati", "Ferrari"],
+        "correct": 3
+    },
+    {
+        "id": 6,
+        "difficultyId": 2,
+        "question": "Which car company produces the Corolla?",
+        "choices": ["Toyota", "Honda", "Ford", "Nissan"],
+        "correct": 0
+    },
+    {
+        "id": 7,
+        "difficultyId": 4,
+        "question": "What is the best-selling car of all time?",
+        "choices": ["Volkswagen Beetle", "Ford Model T", "Toyota Corolla", "Dodge Charger"],
+        "correct": 2
+    },
+    {
+        "id": 8,
+        "difficultyId": 1,
+        "question": "Which car brand has the 'Four Rings' logo?",
+        "choices": ["BMW", "Mercedes-Benz", "Audi", "Volkswagen"],
+        "correct": 2
+    },
+    {
+        "id": 9,
+        "difficultyId": 2,
+        "question": "What type of car is best for off-road driving?",
+        "choices": ["Convertible", "Hatchback", "Sedan", "SUV"],
+        "correct": 3
+    },
+    {
+        "id": 10,
+        "difficultyId": 3,
+        "question": "Which car manufacturer makes the Civic?",
+        "choices": ["Hyundai", "Honda", "Nissan", "Subaru"],
+        "correct": 1
+    },
+    {
+        "id": 11,
+        "difficultyId": 1,
+        "question": "Which company produces the F-150?",
+        "choices": ["Chevrolet", "Ford", "Toyota", "Dodge"],
+        "correct": 1
+    },
+    {
+        "id": 12,
+        "difficultyId": 2,
+        "question": "Which car company produces the Civic?",
+        "choices": ["Ford", "Honda", "Chevrolet", "BMW"],
+        "correct": 1
+    },
+    {
+        "id": 13,
+        "difficultyId": 3,
+        "question": "What car manufacturer makes the Model S?",
+        "choices": ["Ford", "Chevrolet", "Tesla", "BMW"],
+        "correct": 2
+    },
+    {
+        "id": 14,
+        "difficultyId": 4,
+        "question": "Which car company produces the Bugatti Chiron?",
+        "choices": ["Ferrari", "Bugatti", "Porsche", "Lamborghini"],
+        "correct": 1
+    },
+    {
+        "id": 15,
+        "difficultyId": 1,
+        "question": "What car brand uses the 'Blue Oval' logo?",
+        "choices": ["Ford", "Chevrolet", "Honda", "Hyundai"],
+        "correct": 0
+    },
+    {
+        "id": 16,
+        "difficultyId": 2,
+        "question": "Which car company produces the 911?",
+        "choices": ["Mercedes-Benz", "BMW", "Audi", "Porsche"],
+        "correct": 3
+    },
+    {
+        "id": 17,
+        "difficultyId": 3,
+        "question": "Which company manufactures the M5?",
+        "choices": ["BMW", "Audi", "Mercedes-Benz", "Toyota"],
+        "correct": 0
+    },
+    {
+        "id": 18,
+        "difficultyId": 2,
+        "question": "What car brand has the logo with a trident?",
+        "choices": ["Maserati", "Ferrari", "Porsche", "Lamborghini"],
+        "correct": 0
+    },
+    {
+        "id": 19,
+        "difficultyId": 4,
+        "question": "What is the fastest production car in the world?",
+        "choices": ["Bugatti Chiron", "Koenigsegg Jesko", "Tesla Roadster", "Porsche 911 Turbo"],
+        "correct": 1
+    },
+    {
+        "id": 20,
+        "difficultyId": 1,
+        "question": "Which company produces the Prius?",
+        "choices": ["Honda", "Toyota", "Nissan", "Ford"],
+        "correct": 1
+    },
+    {
+        "id": 21,
+        "difficultyId": 1,
+        "question": "What is the best-selling car brand in the U.S.?",
+        "choices": ["Chevrolet", "Ford", "Toyota", "Honda"],
+        "correct": 2
+    },
+    {
+        "id": 22,
+        "difficultyId": 3,
+        "question": "Which company makes the Panamera?",
+        "choices": ["Audi", "BMW", "Porsche", "Lexus"],
+        "correct": 2
+    },
+    {
+        "id": 23,
+        "difficultyId": 4,
+        "question": "What is the most expensive car ever sold at auction?",
+        "choices": ["Ferrari 250 GTO", "Porsche 917", "Mercedes 300SL", "Bugatti Type 57SC Atalante"],
+        "correct": 0
+    },
+    {
+        "id": 24,
+        "difficultyId": 2,
+        "question": "What is the purpose of an alternator in a car?",
+        "choices": ["Charge the battery", "Control the air conditioning", "Run the fuel system", "Power the windshield wipers"],
+        "correct": 0
+    },
+    {
+        "id": 25,
+        "difficultyId": 3,
+        "question": "Which car company produces the Gallardo?",
+        "choices": ["Ferrari", "Lamborghini", "Aston Martin", "Maserati"],
+        "correct": 1
+    },
+    {
+        "id": 26,
+        "difficultyId": 4,
+        "question": "What year did the first car race take place?",
+        "choices": ["1889", "1900", "1920", "1914"],
+        "correct": 0
+    },
+    {
+        "id": 27,
+        "difficultyId": 1,
+        "question": "Which company produces the Civic?",
+        "choices": ["Honda", "Toyota", "Nissan", "Ford"],
+        "correct": 0
+    },
+    {
+        "id": 28,
+        "difficultyId": 2,
+        "question": "What does the term 'Torque' refer to in a car?",
+        "choices": ["Engine speed", "Turning power", "Fuel consumption", "Brake power"],
+        "correct": 1
+    },
+    {
+        "id": 29,
+        "difficultyId": 4,
+        "question": "Which car manufacturer holds the Nürburgring lap record?",
+        "choices": ["Porsche", "BMW", "Audi", "Mercedes-Benz"],
+        "correct": 0
+    },
+    {
+        "id": 30,
+        "difficultyId": 3,
+        "question": "What car brand uses the 'Vorsprung durch Technik' slogan?",
+        "choices": ["BMW", "Audi", "Mercedes-Benz", "Volkswagen"],
+        "correct": 1
+    },
+    {
+        "id": 31,
+        "difficultyId": 1,
+        "question": "Which company produces the Accord?",
+        "choices": ["Honda", "Nissan", "Ford", "Chevrolet"],
+        "correct": 0
+    },
+    {
+        "id": 32,
+        "difficultyId": 1,
+        "question": "Which company makes the Silverado?",
+        "choices": ["Chevrolet", "Ford", "Ram", "GMC"],
+        "correct": 0
+    },
+    {
+        "id": 33,
+        "difficultyId": 2,
+        "question": "What is the top speed of the Bugatti Veyron?",
+        "choices": ["250 mph", "300 mph", "270 mph", "220 mph"],
+        "correct": 0
+    },
+    {
+        "id": 34,
+        "difficultyId": 3,
+        "question": "Which car company produces the Veyron?",
+        "choices": ["Porsche", "Bugatti", "Ferrari", "Aston Martin"],
+        "correct": 1
+    },
+    {
+        "id": 35,
+        "difficultyId": 4,
+        "question": "Which car has the highest horsepower?",
+        "choices": ["Bugatti Chiron", "Tesla Roadster", "Porsche 918 Spyder", "Koenigsegg Agera RS"],
+        "correct": 3
+    },
+    {
+        "id": 36,
+        "difficultyId": 2,
+        "question": "What does 'ABS' stand for in car safety?",
+        "choices": ["Automatic Braking System", "Anti-lock Braking System", "Airbag Braking System", "Autonomous Braking System"],
+        "correct": 1
+    },
+    {
+        "id": 37,
+        "difficultyId": 3,
+        "question": "Which car company produces the LaFerrari?",
+        "choices": ["Ferrari", "Maserati", "Lamborghini", "Porsche"],
+        "correct": 0
+    },
+    {
+        "id": 38,
+        "difficultyId": 1,
+        "question": "Which car brand produces the Camry?",
+        "choices": ["Honda", "Ford", "Nissan", "Toyota"],
+        "correct": 3
+    },
+    {
+        "id": 39,
+        "difficultyId": 2,
+        "question": "What is a turbocharger used for in a car?",
+        "choices": ["Increase fuel efficiency", "Increase engine power", "Reduce engine noise", "Improve tire grip"],
+        "correct": 1
+    },
+    {
+        "id": 40,
+        "difficultyId": 3,
+        "question": "Which car company produces the 918 Spyder?",
+        "choices": ["Ferrari", "Porsche", "Lamborghini", "BMW"],
+        "correct": 1
+    },
+    {
+        "id": 41,
+        "difficultyId": 4,
+        "question": "What is the most expensive production car ever made?",
+        "choices": ["Rolls-Royce Sweptail", "Ferrari 250 GTO", "Bugatti La Voiture Noire", "Koenigsegg Jesko"],
+        "correct": 0
+    },
+    {
+        "id": 42,
+        "difficultyId": 1,
+        "question": "Which company produces the Wrangler?",
+        "choices": ["Ford", "Jeep", "Chevrolet", "Toyota"],
+        "correct": 1
+    },
+    {
+        "id": 43,
+        "difficultyId": 1,
+        "question": "Which company produces the Civic?",
+        "choices": ["Ford", "Honda", "Chevrolet", "Nissan"],
+        "correct": 1
+    },
+    {
+        "id": 44,
+        "difficultyId": 2,
+        "question": "Which car manufacturer produces the Camaro?",
+        "choices": ["Ford", "Chevrolet", "Chrysler", "Honda"],
+        "correct": 1
+    },
+    {
+        "id": 45,
+        "difficultyId": 3,
+        "question": "Which company makes the X5?",
+        "choices": ["BMW", "Audi", "Mercedes-Benz", "Land Rover"],
+        "correct": 0
+    },
+    {
+        "id": 46,
+        "difficultyId": 4,
+        "question": "Which car company produces the Chiron?",
+        "choices": ["Bugatti", "Porsche", "Ferrari", "Lamborghini"],
+        "correct": 0
+    },
+    {
+        "id": 47,
+        "difficultyId": 2,
+        "question": "Which fuel is used by most electric vehicles?",
+        "choices": ["Gasoline", "Diesel", "Electricity", "Ethanol"],
+        "correct": 2
+    },
+    {
+        "id": 48,
+        "difficultyId": 3,
+        "question": "Which company makes the F-type?",
+        "choices": ["Aston Martin", "Jaguar", "Porsche", "BMW"],
+        "correct": 1
+    },
+    {
+        "id": 49,
+        "difficultyId": 4,
+        "question": "Which car has the highest top speed?",
+        "choices": ["Bugatti Veyron", "Koenigsegg Agera RS", "Tesla Roadster", "SSC Tuatara"],
+        "correct": 3
+    },
+    {
+        "id": 50,
+        "difficultyId": 1,
+        "question": "Which company makes the Focus?",
+        "choices": ["Ford", "Chevrolet", "Toyota", "Nissan"],
+        "correct": 0
+    },
+    {
+        "id": 51,
+        "difficultyId": 2,
+        "question": "What is the main purpose of the catalytic converter in a car?",
+        "choices": ["To increase fuel efficiency", "To reduce harmful emissions", "To provide extra power", "To enhance acceleration"],
+        "correct": 1
+    },
+    {
+        "id": 52,
+        "difficultyId": 1,
+        "question": "Which type of car is designed primarily for high-speed driving?",
+        "choices": ["SUV", "Coupe", "Sedan", "Sports car"],
+        "correct": 3
+    },
+    {
+        "id": 53,
+        "difficultyId": 3,
+        "question": "What does 'AWD' stand for in automotive terms?",
+        "choices": ["All-Wheel Drive", "Advanced Wheel Drive", "Automatic Wheel Drive", "All-Wheel Differential"],
+        "correct": 0
+    },
+    {
+        "id": 54,
+        "difficultyId": 4,
+        "question": "Which automotive company is known for its luxury SUV, the Range Rover?",
+        "choices": ["BMW", "Audi", "Land Rover", "Mercedes-Benz"],
+        "correct": 2
+    },
+    {
+        "id": 55,
+        "difficultyId": 2,
+        "question": "What is the function of a timing belt in an engine?",
+        "choices": ["Regulates fuel injection", "Controls the exhaust valves", "Connects the crankshaft to the camshaft", "Distributes power to the tires"],
+        "correct": 2
+    },
+    {
+        "id": 56,
+        "difficultyId": 3,
+        "question": "What does the term 'horsepower' measure in a car?",
+        "choices": ["Maximum fuel efficiency", "Top speed potential", "Engine power output", "Torque force"],
+        "correct": 2
+    },
+    {
+        "id": 57,
+        "difficultyId": 1,
+        "question": "What type of fuel is most commonly used in modern cars?",
+        "choices": ["Diesel", "Ethanol", "Gasoline", "CNG"],
+        "correct": 2
+    },
+    {
+        "id": 58,
+        "difficultyId": 2,
+        "question": "Which car feature allows a vehicle to park itself?",
+        "choices": ["Autopilot", "Adaptive cruise control", "Self-parking system", "Blind spot monitoring"],
+        "correct": 2
+    },
+    {
+        "id": 59,
+        "difficultyId": 3,
+        "question": "What is the top speed of the McLaren P1?",
+        "choices": ["200 mph", "217 mph", "150 mph", "210 mph"],
+        "correct": 1
+    },
+    {
+        "id": 60,
+        "difficultyId": 2,
+        "question": "Which car brand is known for its luxury sedan, the 7 Series?",
+        "choices": ["Mercedes-Benz", "BMW", "Audi", "Lexus"],
+        "correct": 1
+    },
+    {
+        "id": 61,
+        "difficultyId": 4,
+        "question": "What was the first car to feature an airbag as standard equipment?",
+        "choices": ["Chrysler Imperial", "Chevrolet Corvette", "Ford Mustang", "Mercedes-Benz S-Class"],
+        "correct": 0
+    },
+    {
+        "id": 62,
+        "difficultyId": 1,
+        "question": "Which car is known as the 'Beetle'?",
+        "choices": ["Ford Fiesta", "Chevrolet Spark", "Volkswagen Beetle", "Honda Civic"],
+        "correct": 2
+    },
+    {
+        "id": 63,
+        "difficultyId": 2,
+        "question": "What type of engine is commonly used in most modern cars?",
+        "choices": ["Inline-four", "V6", "V8", "Electric"],
+        "correct": 0
+    },
+    {
+        "id": 64,
+        "difficultyId": 3,
+        "question": "What does the 'Turbo' feature in cars refer to?",
+        "choices": ["A supercharged engine", "An advanced braking system", "A form of fuel injection", "A turbocharged engine for more power"],
+        "correct": 3
+    },
+    {
+        "id": 65,
+        "difficultyId": 2,
+        "question": "What does the 'B' in 'BMW' stand for?",
+        "choices": ["Bavarian", "British", "Benz", "Base"],
+        "correct": 0
+    },
+    {
+        "id": 66,
+        "difficultyId": 1,
+        "question": "Which car brand produces the Civic?",
+        "choices": ["Honda", "Nissan", "Chevrolet", "Toyota"],
+        "correct": 0
+    },
+    {
+        "id": 67,
+        "difficultyId": 4,
+        "question": "What is the main difference between hybrid and electric vehicles?",
+        "choices": ["Hybrid cars use gasoline and electricity, while electric cars use only electricity", "Hybrid cars are cheaper to maintain", "Electric cars have higher fuel efficiency", "Hybrid cars have a larger battery"],
+        "correct": 0
+    },
+    {
+        "id": 68,
+        "difficultyId": 3,
+        "question": "Which company manufactures the Aventador?",
+        "choices": ["Ferrari", "Porsche", "Lamborghini", "Maserati"],
+        "correct": 2
+    },
+    {
+        "id": 69,
+        "difficultyId": 1,
+        "question": "Which car company produces the Model X?",
+        "choices": ["Chevrolet", "Tesla", "Ford", "Nissan"],
+        "correct": 1
+    },
+    {
+        "id": 70,
+        "difficultyId": 2,
+        "question": "What does 'ABS' stand for in car safety systems?",
+        "choices": ["Anti-lock Braking System", "Automatic Braking System", "Airbag Braking System", "Autonomous Braking System"],
+        "correct": 0
+    },
+    {
+        "id": 71,
+        "difficultyId": 1,
+        "question": "Which company makes the Prius?",
+        "choices": ["Toyota", "Honda", "Ford", "Nissan"],
+        "correct": 0
+    },
+    {
+        "id": 72,
+        "difficultyId": 3,
+        "question": "Which car company is known for producing the F-Type?",
+        "choices": ["Porsche", "Jaguar", "BMW", "Ferrari"],
+        "correct": 1
+    },
+    {
+        "id": 73,
+        "difficultyId": 4,
+        "question": "Which of the following was the first fully autonomous car to be publicly tested?",
+        "choices": ["Tesla Model 3", "Waymo Chrysler Pacifica", "Uber Volvo XC90", "GM Cruise Chevy Bolt"],
+        "correct": 1
+    },
+    {
+        "id": 74,
+        "difficultyId": 2,
+        "question": "What is the main advantage of electric cars over traditional gasoline vehicles?",
+        "choices": ["Lower maintenance costs", "Faster speed", "Higher engine power", "Cheaper to buy"],
+        "correct": 0
+    },
+    {
+        "id": 75,
+        "difficultyId": 1,
+        "question": "Which car manufacturer is famous for producing the 'Mustang'?",
+        "choices": ["Ford", "Chevrolet", "Dodge", "Nissan"],
+        "correct": 0
+    },
+    {
+        "id": 76,
+        "difficultyId": 3,
+        "question": "What year did Ferrari produce the 250 GTO?",
+        "choices": ["1953", "1962", "1970", "1980"],
+        "correct": 1
+    },
+    {
+        "id": 77,
+        "difficultyId": 4,
+        "question": "Which country is home to the automotive company Koenigsegg?",
+        "choices": ["Sweden", "Germany", "Italy", "United States"],
+        "correct": 0
+    },
+    {
+        "id": 78,
+        "difficultyId": 1,
+        "question": "Which car brand is known for the tagline 'The Ultimate Driving Machine'?",
+        "choices": ["Audi", "BMW", "Porsche", "Mercedes-Benz"],
+        "correct": 1
+    },
+    {
+        "id": 79,
+        "difficultyId": 2,
+        "question": "Which safety feature helps drivers avoid collisions by monitoring blind spots?",
+        "choices": ["Lane Assist", "Blind Spot Monitoring", "Adaptive Cruise Control", "Traction Control"],
+        "correct": 1
+    },
+    {
+        "id": 80,
+        "difficultyId": 3,
+        "question": "What is the primary advantage of a turbocharged engine?",
+        "choices": ["Better fuel economy", "More horsepower", "Lower weight", "Reduced emissions"],
+        "correct": 1
+    },
+    {
+        "id": 81,
+        "difficultyId": 4,
+        "question": "Which car brand was the first to introduce adaptive cruise control?",
+        "choices": ["Mercedes-Benz", "Volvo", "Audi", "BMW"],
+        "correct": 1
+    },
+    {
+        "id": 82,
+        "difficultyId": 2,
+        "question": "Which car company produced the world's first hybrid vehicle?",
+        "choices": ["Honda", "Toyota", "Nissan", "Ford"],
+        "correct": 1
+    },
+    {
+        "id": 83,
+        "difficultyId": 1,
+        "question": "Which car brand is known for the 'Camry'?",
+        "choices": ["Toyota", "Honda", "Ford", "Chevrolet"],
+        "correct": 0
+    },
+    {
+        "id": 84,
+        "difficultyId": 3,
+        "question": "Which of the following vehicles is most likely to have a V12 engine?",
+        "choices": ["Honda Accord", "Chevrolet Malibu", "Aston Martin DB11", "Ford F-150"],
+        "correct": 2
+    },
+    {
+        "id": 85,
+        "difficultyId": 1,
+        "question": "Which car is often called the 'muscle car'?",
+        "choices": ["Chevrolet Camaro", "Honda Civic", "Tesla Model 3", "Nissan Leaf"],
+        "correct": 0
+    },
+    {
+        "id": 86,
+        "difficultyId": 4,
+        "question": "What was the first car to feature an all-aluminum body?",
+        "choices": ["Audi A8", "Jaguar XJ", "Tesla Model S", "Ford F-150"],
+        "correct": 1
+    },
+    {
+        "id": 87,
+        "difficultyId": 3,
+        "question": "What is the main benefit of a continuously variable transmission (CVT)?",
+        "choices": ["Better acceleration", "Improved fuel efficiency", "Faster gear shifts", "Higher top speed"],
+        "correct": 1
+    },
+    {
+        "id": 88,
+        "difficultyId": 1,
+        "question": "What is the smallest engine configuration commonly found in cars?",
+        "choices": ["V4", "V6", "Inline-4", "V8"],
+        "correct": 2
+    },
+    {
+        "id": 89,
+        "difficultyId": 2,
+        "question": "Which car company introduced the first mass-produced electric vehicle?",
+        "choices": ["Nissan", "Ford", "Chevrolet", "Tesla"],
+        "correct": 3
+    },
+    {
+        "id": 90,
+        "difficultyId": 1,
+        "question": "Which car brand produces the Model S?",
+        "choices": ["Ford", "Tesla", "Nissan", "Chevrolet"],
+        "correct": 1
+    },
+    {
+        "id": 91,
+        "difficultyId": 4,
+        "question": "What feature allows a car to drive autonomously without human input?",
+        "choices": ["Autopilot", "Cruise control", "Lane departure warning", "Automatic emergency braking"],
+        "correct": 0
+    },
+    {
+        "id": 92,
+        "difficultyId": 3,
+        "question": "What is the primary purpose of a turbocharger in an engine?",
+        "choices": ["To increase fuel efficiency", "To cool the engine", "To increase air intake for better performance", "To reduce emissions"],
+        "correct": 2
+    },
+    {
+        "id": 93,
+        "difficultyId": 2,
+        "question": "Which company invented the first practical automobile in the 1880s?",
+        "choices": ["Ford", "Daimler", "Benz", "Porsche"],
+        "correct": 2
+    },
+    {
+        "id": 94,
+        "difficultyId": 1,
+        "question": "Which car company is known for its 'Civic' model?",
+        "choices": ["Honda", "Toyota", "Nissan", "Chevrolet"],
+        "correct": 0
+    },
+    {
+        "id": 95,
+        "difficultyId": 4,
+        "question": "What is the most expensive car ever sold at auction?",
+        "choices": ["Ferrari 250 GTO", "Bugatti La Voiture Noire", "Porsche 917", "Mercedes-Benz 300SL"],
+        "correct": 0
+    },
+    {
+        "id": 96,
+        "difficultyId": 3,
+        "question": "What is the world's fastest car as of 2025?",
+        "choices": ["Koenigsegg Jesko Absolut", "Bugatti Chiron Super Sport 300+", "SSC Tuatara", "Hennessey Venom F5"],
+        "correct": 0
+    },
+    {
+        "id": 97,
+        "difficultyId": 2,
+        "question": "Which feature is essential for a vehicle to have 'lane-keeping assist'?",
+        "choices": ["Radar sensors", "Adaptive cruise control", "Cameras and sensors", "Torque vectoring"],
+        "correct": 2
+    },
+    {
+        "id": 98,
+        "difficultyId": 1,
+        "question": "Which car brand manufactures the Outback?",
+        "choices": ["Subaru", "Toyota", "Honda", "Mazda"],
+        "correct": 0
+    },
+    {
+        "id": 99,
+        "difficultyId": 3,
+        "question": "Which technology is commonly used to power electric vehicles?",
+        "choices": ["Lithium-ion battery", "Lead-acid battery", "Nickel-cadmium battery", "Alkaline battery"],
+        "correct": 0
+    },
+    {
+        "id": 100,
+        "difficultyId": 2,
+        "question": "Which car brand produced the world's first hybrid vehicle in 1997?",
+        "choices": ["Toyota", "Honda", "Ford", "Chevrolet"],
+        "correct": 0
+    }
+
+]

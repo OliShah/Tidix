@@ -58,49 +58,25 @@ var sndcorrect = new Audio("choicecorrect.wav");
 
 var timeLeft = 10;
 var timer = setInterval(function(){
-    timeLeft--;
+    timeLeft --;
     document.getElementById("timer").textContent = timeLeft;
-    
-    if (timeLeft <= 0) {
-        endGame("timeout");
+    if(timeLeft <= 0 && score < 5){
+        clearInterval(timer);
+        document.getElementById("quiz-container").innerHTML = `<h2>Time's Up!</h2><p>Your final score is: ${score}/${quizData.length}</p>`;
+    }
+    if(timeLeft <= 0 && score >= 5){
+        clearInterval(timer);
+        document.getElementById("quiz-container").innerHTML = `<h2>Congratulations! You've won a *prize*!</h2><p>Your final score is: ${score}/${quizData.length}</p>`;
     }
 }, 1000);
 
-function endGame(reason) {
-    clearInterval(timer);
-    let quizContainer = document.getElementById("quiz-container");
-
-    let message = "";
-    
-    if (reason === "timeout") {
-        message = `<h2>Time's Up!</h2>`;
-    } else if (score >= 5) {
-        message = `<h2>Congratulations! You've won a *prize*!</h2>`;
-    } else {
-        message = `<h2>Game Over!</h2>`;
-    }
-
-    quizContainer.innerHTML = `
-        <p>We would greatly appreciate it if you could take a moment to complete our survey and provide feedback on our game!</p>
-        
-        ${message}
-        <p>Your final score is: ${score}/${quizData.length}</p>
-        <button onclick="goToSurvey()">Take Survey</button>
-        <button onclick="goToMainMenu()">Return to Main Menu</button>
-    `;
-}
-
-function goToSurvey() {
-    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeWECsUimmH9gjThFiu3didm_GhxSB8ziNvmzWy5Ja-BN_-NA/viewform";
-}
-
-function goToMainMenu() {
-    window.location.href = "index.html";
-}
-
 function loadQuestion() {
-    if (currentQuestionIndex >= quizData.length) {
-        endGame("finished");
+    if (currentQuestionIndex >= quizData.length && score >= 5) {
+        document.getElementById("quiz-container").innerHTML = `<h2>Congratulations! You've won a *prize*!</h2><p>Your final score is: ${score}/${quizData.length}</p>`;
+        return;
+    }
+    if (currentQuestionIndex >= quizData.length && score < 5) {
+        document.getElementById("quiz-container").innerHTML = `<h2>Game Over!</h2><p>Your final score is: ${score}/${quizData.length}</p>`;
         return;
     }
 
@@ -113,23 +89,26 @@ function loadQuestion() {
             timeLeft = 11;
             btn.innerText = q.choices[index];
             btn.style.display = "block";
+            
         }
     });
 
     document.getElementById("score").innerText = `Score: ${score}`;
+    ;
 }
 
 function selectAnswer(choiceIndex) {
     if (choiceIndex === quizData[currentQuestionIndex].correct) {
         score++;
         sndcorrect.play();
-    } else {
+    }
+    else {
         sndwrong.play();
     }
     currentQuestionIndex++;
+    
     loadQuestion();
 }
-
 document.addEventListener("DOMContentLoaded", () => {
     loadQuestion();
 });

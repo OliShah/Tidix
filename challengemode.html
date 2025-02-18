@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="challengemodescript.js"></script>
+<head>   
+    
     <link rel="stylesheet" href="gamestyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +9,20 @@
 </head>
 <body>
     <div id="quiz-container">
-        <h2 id="question"></h2>
+        <button onclick="showRules()">Rules</button>
+        <h2 id="question"></h2> 
         <div class="btn-container">
-        <button class="btn" onclick="selectAnswer(0)"></button>
-        <button class="btn" onclick="selectAnswer(1)"></button>
-        <button class="btn" onclick="selectAnswer(2)"></button>
-        <button class="btn" onclick="selectAnswer(3)"></button>
+            <button class="btn" onclick="selectAnswer(0)"></button>
+            <button class="btn" onclick="selectAnswer(1)"></button>
+            <button class="btn" onclick="selectAnswer(2)"></button>
+            <button class="btn" onclick="selectAnswer(3)"></button>
         </div>
         <div id="timer">10</div>
+        <div id="score"></div>
+        <div id="qAnswered"></div>
         <div id="diff"></div>
+        <div id="lives"></div>
     </div>
-    
+    <script src="challengemodescript.js"></script>
 </body>
 </html>
