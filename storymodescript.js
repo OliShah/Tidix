@@ -62,21 +62,33 @@ var timer = setInterval(function(){
     document.getElementById("timer").textContent = timeLeft;
     if(timeLeft <= 0 && score < 5){
         clearInterval(timer);
-        document.getElementById("quiz-container").innerHTML = `<h2>Time's Up!</h2><p>Your final score is: ${score}/${quizData.length}</p>`;
+        document.getElementById("quiz-container").innerHTML = `<h2>Time's Up!</h2><p>Your final score is: ${score}/${quizData.length}</p>
+        <p>We would greatly appreciate it if you could take a moment to complete our survey and provide feedback on our game!</p>
+        <button onclick="goToSurvey()">Take Survey</button>
+        <button onclick="goToMainMenu()">Return to Main Menu</button>`;
     }
     if(timeLeft <= 0 && score >= 5){
         clearInterval(timer);
-        document.getElementById("quiz-container").innerHTML = `<h2>Congratulations! You've won a *prize*!</h2><p>Your final score is: ${score}/${quizData.length}</p>`;
+        document.getElementById("quiz-container").innerHTML = `<h2>Congratulations! You've won a *prize*!</h2><p>Your final score is: ${score}/${quizData.length}</p>
+        <p>We would greatly appreciate it if you could take a moment to complete our survey and provide feedback on our game!</p>
+        <button onclick="goToSurvey()">Take Survey</button>
+        <button onclick="goToMainMenu()">Return to Main Menu</button>`;
     }
 }, 1000);
 
 function loadQuestion() {
     if (currentQuestionIndex >= quizData.length && score >= 5) {
-        document.getElementById("quiz-container").innerHTML = `<h2>Congratulations! You've won a *prize*!</h2><p>Your final score is: ${score}/${quizData.length}</p>`;
+        document.getElementById("quiz-container").innerHTML = `<h2>Congratulations! You've won a *prize*!</h2><p>Your final score is: ${score}/${quizData.length}</p>
+        <p>We would greatly appreciate it if you could take a moment to complete our survey and provide feedback on our game!</p>
+        <button onclick="goToSurvey()">Take Survey</button>
+        <button onclick="goToMainMenu()">Return to Main Menu</button>`;
         return;
     }
     if (currentQuestionIndex >= quizData.length && score < 5) {
-        document.getElementById("quiz-container").innerHTML = `<h2>Game Over!</h2><p>Your final score is: ${score}/${quizData.length}</p>`;
+        document.getElementById("quiz-container").innerHTML = `<h2>Game Over!</h2><p>Your final score is: ${score}/${quizData.length}</p>
+        <p>We would greatly appreciate it if you could take a moment to complete our survey and provide feedback on our game!</p>
+        <button onclick="goToSurvey()">Take Survey</button>
+        <button onclick="goToMainMenu()">Return to Main Menu</button>`;
         return;
     }
 
@@ -109,6 +121,14 @@ function selectAnswer(choiceIndex) {
     
     loadQuestion();
 }
+function goToSurvey() {
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeWECsUimmH9gjThFiu3didm_GhxSB8ziNvmzWy5Ja-BN_-NA/viewform";
+}
+
+function goToMainMenu() {
+    window.location.href = "index.html";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     loadQuestion();
 });
